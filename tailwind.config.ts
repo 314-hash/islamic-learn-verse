@@ -26,11 +26,13 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					glow: 'hsl(var(--primary-glow))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
-					foreground: 'hsl(var(--secondary-foreground))'
+					foreground: 'hsl(var(--secondary-foreground))',
+					glow: 'hsl(var(--secondary-glow))'
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
@@ -61,6 +63,18 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Islamic color palette
+				islamic: {
+					gold: 'hsl(var(--islamic-gold))',
+					'gold-light': 'hsl(var(--islamic-gold-light))',
+					'gold-dark': 'hsl(var(--islamic-gold-dark))',
+					teal: 'hsl(var(--islamic-teal))',
+					'teal-light': 'hsl(var(--islamic-teal-light))',
+					'teal-dark': 'hsl(var(--islamic-teal-dark))',
+					navy: 'hsl(var(--islamic-navy))',
+					'navy-light': 'hsl(var(--islamic-navy-light))',
+					'navy-dark': 'hsl(var(--islamic-navy-dark))'
 				}
 			},
 			borderRadius: {
@@ -88,7 +102,23 @@ export default {
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 6s ease-in-out infinite',
+				'glow': 'glow 2s ease-in-out infinite alternate',
+				'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+				'slide-in': 'slideIn 0.5s ease-out forwards',
+				'scale-up': 'scaleUp 0.3s ease-out forwards'
+			},
+			boxShadow: {
+				'gold': 'var(--shadow-gold)',
+				'teal': 'var(--shadow-teal)',
+				'elegant': 'var(--shadow-elegant)'
+			},
+			backgroundImage: {
+				'hero-gradient': 'var(--gradient-hero)',
+				'gold-gradient': 'var(--gradient-gold)',
+				'teal-gradient': 'var(--gradient-teal)',
+				'card-gradient': 'var(--gradient-card)'
 			}
 		}
 	},
