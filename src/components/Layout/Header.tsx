@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Wallet } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { ThemeToggle } from "../ui/theme-toggle";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -75,8 +76,9 @@ export default function Header({ onWalletConnect, isWalletConnected, walletAddre
             ))}
           </nav>
 
-          {/* Desktop Wallet Button */}
+          {/* Desktop Actions */}
           <div className="hidden md:flex items-center space-x-4">
+            <ThemeToggle />
             <Button
               variant={isWalletConnected ? "premium" : "hero"}
               size="default"
@@ -131,6 +133,9 @@ export default function Header({ onWalletConnect, isWalletConnected, walletAddre
                 </Link>
               ))}
               <div className="pt-4 space-y-2">
+                <div className="flex justify-center pb-2">
+                  <ThemeToggle />
+                </div>
                 <Button
                   variant={isWalletConnected ? "premium" : "hero"}
                   size="default"
