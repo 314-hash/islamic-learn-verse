@@ -36,9 +36,9 @@ const App = () => {
         <Toaster />
         <Sonner />
         <BrowserRouter>
-          <div className="islamic-pattern min-h-screen">
+          <div className="vlcp-pattern min-h-screen">
             <Header 
-              onWalletConnect={handleWalletConnect}
+              onWalletConnect={() => {/* Implement wallet connection */}}
               isWalletConnected={isWalletConnected}
               walletAddress={walletAddress}
             />

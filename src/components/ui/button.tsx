@@ -18,11 +18,11 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80 shadow-teal",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        // Islamic-inspired variants
-        hero: "bg-gold-gradient text-islamic-navy hover:shadow-gold hover:scale-105 font-semibold",
-        islamic: "bg-teal-gradient text-foreground hover:shadow-teal hover:scale-105",
-        premium: "bg-card-gradient border border-islamic-gold text-islamic-gold hover:bg-islamic-gold hover:text-islamic-navy hover:shadow-gold transition-all duration-500",
-        elegant: "bg-transparent border-2 border-islamic-gold text-islamic-gold hover:bg-islamic-gold hover:text-islamic-navy hover:shadow-gold transition-all duration-300"
+        // VLCP Professional variants
+        hero: "bg-gold-gradient text-vlcp-navy hover:shadow-gold hover:scale-105 font-semibold",
+        professional: "bg-blue-gradient text-vlcp-white hover:shadow-blue hover:scale-105",
+        premium: "bg-card-gradient border border-vlcp-gold text-vlcp-gold hover:bg-vlcp-gold hover:text-vlcp-navy hover:shadow-gold transition-all duration-500",
+        elegant: "bg-transparent border-2 border-vlcp-gold text-vlcp-gold hover:bg-vlcp-gold hover:text-vlcp-navy hover:shadow-gold transition-all duration-300"
       },
       size: {
         default: "h-12 px-6 py-3",

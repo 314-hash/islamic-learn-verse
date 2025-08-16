@@ -9,66 +9,70 @@
 
 @layer base {
   :root {
-    /* Islamic-inspired dark theme */
-    --background: 220 26% 4%;
-    --foreground: 43 96% 90%;
+    /* VLCP Brand Colors - Based on Logo */
+    --background: 0 0% 100%;
+    --foreground: 217 91% 15%;
 
-    --card: 220 26% 6%;
-    --card-foreground: 43 96% 90%;
+    --card: 0 0% 100%;
+    --card-foreground: 217 91% 15%;
 
-    --popover: 220 26% 8%;
-    --popover-foreground: 43 96% 90%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 217 91% 15%;
 
-    /* Islamic Gold - Primary */
-    --primary: 43 96% 56%;
-    --primary-foreground: 220 26% 4%;
-    --primary-glow: 43 100% 70%;
+    /* Navy Blue - Primary (from logo) */
+    --primary: 217 91% 25%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 217 91% 35%;
 
-    /* Teal Accent - Secondary */
-    --secondary: 188 90% 42%;
-    --secondary-foreground: 220 26% 4%;
-    --secondary-glow: 188 95% 60%;
+    /* Gold Accent - Secondary (from logo) */
+    --secondary: 45 93% 58%;
+    --secondary-foreground: 217 91% 15%;
+    --secondary-glow: 45 100% 70%;
 
-    /* Muted Islamic Navy */
-    --muted: 220 26% 12%;
-    --muted-foreground: 43 30% 70%;
+    /* Light Navy - Muted */
+    --muted: 217 50% 95%;
+    --muted-foreground: 217 25% 45%;
 
     /* Accent variations */
-    --accent: 188 90% 42%;
-    --accent-foreground: 220 26% 4%;
+    --accent: 217 50% 95%;
+    --accent-foreground: 217 91% 25%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 43 96% 90%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 220 26% 20%;
-    --input: 220 26% 12%;
-    --ring: 43 96% 56%;
+    --border: 217 25% 90%;
+    --input: 217 25% 90%;
+    --ring: 217 91% 25%;
 
     --radius: 0.75rem;
 
-    /* Custom Islamic design tokens */
-    --islamic-gold: 43 96% 56%;
-    --islamic-gold-light: 43 100% 70%;
-    --islamic-gold-dark: 43 90% 45%;
+    /* VLCP Brand Design Tokens */
+    --vlcp-navy: 217 91% 15%;
+    --vlcp-navy-light: 217 91% 25%;
+    --vlcp-navy-dark: 217 91% 10%;
     
-    --islamic-teal: 188 90% 42%;
-    --islamic-teal-light: 188 95% 60%;
-    --islamic-teal-dark: 188 85% 30%;
+    --vlcp-gold: 45 93% 58%;
+    --vlcp-gold-light: 45 100% 70%;
+    --vlcp-gold-dark: 45 85% 45%;
     
-    --islamic-navy: 220 26% 4%;
-    --islamic-navy-light: 220 26% 12%;
-    --islamic-navy-dark: 220 30% 2%;
+    --vlcp-blue: 217 91% 35%;
+    --vlcp-blue-light: 217 91% 45%;
+    --vlcp-blue-dark: 217 91% 25%;
 
-    /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--islamic-navy)), hsl(var(--islamic-navy-light)));
-    --gradient-gold: linear-gradient(135deg, hsl(var(--islamic-gold-dark)), hsl(var(--islamic-gold)));
-    --gradient-teal: linear-gradient(135deg, hsl(var(--islamic-teal-dark)), hsl(var(--islamic-teal)));
-    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(var(--islamic-navy-light)));
+    --vlcp-white: 0 0% 100%;
+    --vlcp-gray: 217 25% 95%;
+    --vlcp-gray-dark: 217 25% 45%;
+
+    /* Professional Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--vlcp-navy)), hsl(var(--vlcp-blue)));
+    --gradient-gold: linear-gradient(135deg, hsl(var(--vlcp-gold-dark)), hsl(var(--vlcp-gold)));
+    --gradient-blue: linear-gradient(135deg, hsl(var(--vlcp-blue-dark)), hsl(var(--vlcp-blue)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(var(--vlcp-gray)));
     
-    /* Shadows with Islamic colors */
-    --shadow-gold: 0 10px 30px hsl(var(--islamic-gold) / 0.3);
-    --shadow-teal: 0 10px 30px hsl(var(--islamic-teal) / 0.3);
-    --shadow-elegant: 0 20px 60px hsl(var(--islamic-navy) / 0.8);
+    /* Professional Shadows */
+    --shadow-gold: 0 10px 30px hsl(var(--vlcp-gold) / 0.25);
+    --shadow-blue: 0 10px 30px hsl(var(--vlcp-blue) / 0.25);
+    --shadow-elegant: 0 20px 60px hsl(var(--vlcp-navy) / 0.15);
 
     /* Animation durations */
     --duration-fast: 0.2s;
@@ -76,15 +80,54 @@
     --duration-slow: 0.5s;
     --duration-slower: 0.8s;
 
-    /* Sidebar (keeping dark theme consistent) */
-    --sidebar-background: 220 26% 6%;
-    --sidebar-foreground: 43 96% 90%;
-    --sidebar-primary: 43 96% 56%;
-    --sidebar-primary-foreground: 220 26% 4%;
-    --sidebar-accent: 220 26% 12%;
-    --sidebar-accent-foreground: 43 96% 90%;
-    --sidebar-border: 220 26% 20%;
-    --sidebar-ring: 43 96% 56%;
+    /* Sidebar (professional theme) */
+    --sidebar-background: 217 91% 15%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 45 93% 58%;
+    --sidebar-primary-foreground: 217 91% 15%;
+    --sidebar-accent: 217 91% 25%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 217 50% 30%;
+    --sidebar-ring: 45 93% 58%;
+  }
+
+  .dark {
+    --background: 217 91% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 217 91% 10%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 217 91% 8%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 45 93% 58%;
+    --primary-foreground: 217 91% 15%;
+
+    --secondary: 217 50% 20%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 217 50% 15%;
+    --muted-foreground: 217 25% 70%;
+
+    --accent: 217 50% 15%;
+    --accent-foreground: 0 0% 95%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 95%;
+
+    --border: 217 50% 20%;
+    --input: 217 50% 15%;
+    --ring: 45 93% 58%;
+    
+    --sidebar-background: 217 91% 5%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 45 93% 58%;
+    --sidebar-primary-foreground: 217 91% 15%;
+    --sidebar-accent: 217 50% 15%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 217 50% 20%;
+    --sidebar-ring: 45 93% 58%;
   }
 }
 
@@ -98,36 +141,36 @@
     overflow-x: hidden;
   }
 
-  /* Islamic geometric patterns */
-  .islamic-pattern {
+  /* Professional geometric patterns */
+  .vlcp-pattern {
     background-image: 
-      radial-gradient(circle at 25% 25%, hsl(var(--islamic-gold) / 0.1) 2px, transparent 2px),
-      radial-gradient(circle at 75% 75%, hsl(var(--islamic-teal) / 0.1) 2px, transparent 2px);
-    background-size: 40px 40px;
-    background-position: 0 0, 20px 20px;
+      radial-gradient(circle at 25% 25%, hsl(var(--vlcp-gold) / 0.05) 2px, transparent 2px),
+      radial-gradient(circle at 75% 75%, hsl(var(--vlcp-blue) / 0.05) 2px, transparent 2px);
+    background-size: 50px 50px;
+    background-position: 0 0, 25px 25px;
   }
 
-  /* Scrollbar styling */
+  /* Professional scrollbar styling */
   ::-webkit-scrollbar {
     width: 8px;
   }
 
   ::-webkit-scrollbar-track {
-    background: hsl(var(--islamic-navy));
+    background: hsl(var(--vlcp-gray));
   }
 
   ::-webkit-scrollbar-thumb {
-    background: hsl(var(--islamic-gold));
+    background: hsl(var(--vlcp-navy));
     border-radius: 4px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: hsl(var(--islamic-gold-light));
+    background: hsl(var(--vlcp-blue));
   }
 }
 
 @layer components {
-  /* Hero section styles */
+  /* Professional section styles */
   .hero-gradient {
     background: var(--gradient-hero);
   }
@@ -136,12 +179,23 @@
     background: var(--gradient-gold);
   }
 
-  .teal-gradient {
-    background: var(--gradient-teal);
+  .blue-gradient {
+    background: var(--gradient-blue);
   }
 
   .card-gradient {
     background: var(--gradient-card);
+  }
+
+  /* Professional brand elements */
+  .vlcp-logo-bg {
+    background: hsl(var(--vlcp-navy));
+    border: 2px solid hsl(var(--vlcp-gold));
+  }
+
+  .vlcp-badge {
+    background: hsl(var(--vlcp-gold));
+    color: hsl(var(--vlcp-navy));
   }
 
   /* Animation classes */
@@ -157,9 +211,16 @@
     animation: fadeInUp 0.8s ease-out forwards;
   }
 
-  /* Islamic star pattern */
-  .star-pattern {
-    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  /* Professional circular logo */
+  .vlcp-circle {
+    clip-path: circle(50%);
+    border: 3px solid hsl(var(--vlcp-gold));
+  }
+
+  /* Education icons */
+  .education-icon {
+    background: hsl(var(--vlcp-gold));
+    color: hsl(var(--vlcp-navy));
   }
 }
 
@@ -169,8 +230,8 @@
 }
 
 @keyframes glow {
-  0% { box-shadow: 0 0 20px hsl(var(--islamic-gold) / 0.5); }
-  100% { box-shadow: 0 0 40px hsl(var(--islamic-gold) / 0.8), 0 0 60px hsl(var(--islamic-gold) / 0.4); }
+  0% { box-shadow: 0 0 20px hsl(var(--vlcp-gold) / 0.3); }
+  100% { box-shadow: 0 0 40px hsl(var(--vlcp-gold) / 0.6), 0 0 60px hsl(var(--vlcp-gold) / 0.2); }
 }
 
 @keyframes fadeInUp {

@@ -64,17 +64,20 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Islamic color palette
-				islamic: {
-					gold: 'hsl(var(--islamic-gold))',
-					'gold-light': 'hsl(var(--islamic-gold-light))',
-					'gold-dark': 'hsl(var(--islamic-gold-dark))',
-					teal: 'hsl(var(--islamic-teal))',
-					'teal-light': 'hsl(var(--islamic-teal-light))',
-					'teal-dark': 'hsl(var(--islamic-teal-dark))',
-					navy: 'hsl(var(--islamic-navy))',
-					'navy-light': 'hsl(var(--islamic-navy-light))',
-					'navy-dark': 'hsl(var(--islamic-navy-dark))'
+				// VLCP Professional color palette
+				vlcp: {
+					navy: 'hsl(var(--vlcp-navy))',
+					'navy-light': 'hsl(var(--vlcp-navy-light))',
+					'navy-dark': 'hsl(var(--vlcp-navy-dark))',
+					gold: 'hsl(var(--vlcp-gold))',
+					'gold-light': 'hsl(var(--vlcp-gold-light))',
+					'gold-dark': 'hsl(var(--vlcp-gold-dark))',
+					blue: 'hsl(var(--vlcp-blue))',
+					'blue-light': 'hsl(var(--vlcp-blue-light))',
+					'blue-dark': 'hsl(var(--vlcp-blue-dark))',
+					white: 'hsl(var(--vlcp-white))',
+					gray: 'hsl(var(--vlcp-gray))',
+					'gray-dark': 'hsl(var(--vlcp-gray-dark))'
 				}
 			},
 			borderRadius: {
@@ -111,13 +114,13 @@ export default {
 			},
 			boxShadow: {
 				'gold': 'var(--shadow-gold)',
-				'teal': 'var(--shadow-teal)',
+				'blue': 'var(--shadow-blue)',
 				'elegant': 'var(--shadow-elegant)'
 			},
 			backgroundImage: {
 				'hero-gradient': 'var(--gradient-hero)',
 				'gold-gradient': 'var(--gradient-gold)',
-				'teal-gradient': 'var(--gradient-teal)',
+				'blue-gradient': 'var(--gradient-blue)',
 				'card-gradient': 'var(--gradient-card)'
 			}
 		}

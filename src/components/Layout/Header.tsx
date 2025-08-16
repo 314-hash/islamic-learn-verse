@@ -48,9 +48,11 @@ export default function Header({ onWalletConnect, isWalletConnected, walletAddre
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gold-gradient rounded-lg flex items-center justify-center star-pattern">
-              <span className="text-islamic-navy font-bold text-lg">V</span>
-            </div>
+            <img 
+              src="/lovable-uploads/625df1a1-ed43-49dd-a662-0e0aa6e79601.png" 
+              alt="VLCP Logo" 
+              className="w-12 h-12 rounded-full object-contain"
+            />
             <span className="text-2xl font-bold text-foreground">VLCP</span>
           </Link>
 
@@ -63,12 +65,12 @@ export default function Header({ onWalletConnect, isWalletConnected, walletAddre
                 className={cn(
                   "text-sm font-medium transition-colors duration-200 relative group",
                   location.pathname === item.href
-                    ? "text-islamic-gold"
+                    ? "text-vlcp-gold"
                     : "text-muted-foreground hover:text-foreground"
                 )}
               >
                 {item.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-islamic-gold transition-all duration-300 group-hover:w-full" />
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-vlcp-gold transition-all duration-300 group-hover:w-full" />
               </Link>
             ))}
           </nav>
@@ -120,7 +122,7 @@ export default function Header({ onWalletConnect, isWalletConnected, walletAddre
                   className={cn(
                     "block px-3 py-2 text-base font-medium rounded-md transition-colors",
                     location.pathname === item.href
-                      ? "text-islamic-gold bg-islamic-gold/10"
+                      ? "text-vlcp-gold bg-vlcp-gold/10"
                       : "text-muted-foreground hover:text-foreground hover:bg-accent"
                   )}
                   onClick={() => setIsMenuOpen(false)}

@@ -182,7 +182,7 @@ export default function Courses() {
               {["All", "Beginner", "Intermediate", "Advanced"].map((level) => (
                 <Button
                   key={level}
-                  variant={selectedLevel === level ? "islamic" : "outline"}
+                  variant={selectedLevel === level ? "professional" : "outline"}
                   size="sm"
                   onClick={() => setSelectedLevel(level)}
                 >

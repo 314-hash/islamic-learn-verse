@@ -129,14 +129,14 @@ export default function Home() {
           <div className="space-y-8">
             <h1 className="hero-title text-5xl md:text-7xl font-bold text-foreground leading-tight">
               Learn with
-              <span className="block bg-gradient-to-r from-islamic-gold to-islamic-teal bg-clip-text text-transparent">
-                Islamic Values
+              <span className="block bg-gradient-to-r from-vlcp-gold to-vlcp-blue bg-clip-text text-transparent">
+                Excellence
               </span>
             </h1>
             
             <p className="hero-subtitle text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Experience next-generation Islamic education with blockchain-verified certificates, 
-              interactive courses, and a global community committed to ethical learning.
+              Experience next-generation virtual learning with blockchain-verified certificates, 
+              interactive courses, and a global community committed to educational excellence.
             </p>
             
             <div className="hero-buttons flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -156,12 +156,12 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Floating Islamic patterns */}
+        {/* Floating decorative elements */}
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-20 left-10 w-20 h-20 star-pattern bg-islamic-gold/10 animate-float" />
-          <div className="absolute top-40 right-20 w-16 h-16 star-pattern bg-islamic-teal/10 animate-float" style={{ animationDelay: "2s" }} />
-          <div className="absolute bottom-40 left-20 w-24 h-24 star-pattern bg-islamic-gold/10 animate-float" style={{ animationDelay: "4s" }} />
-          <div className="absolute bottom-20 right-10 w-18 h-18 star-pattern bg-islamic-teal/10 animate-float" style={{ animationDelay: "1s" }} />
+          <div className="absolute top-20 left-10 w-20 h-20 vlcp-circle bg-vlcp-gold/10 animate-float" />
+          <div className="absolute top-40 right-20 w-16 h-16 vlcp-circle bg-vlcp-blue/10 animate-float" style={{ animationDelay: "2s" }} />
+          <div className="absolute bottom-40 left-20 w-24 h-24 vlcp-circle bg-vlcp-gold/10 animate-float" style={{ animationDelay: "4s" }} />
+          <div className="absolute bottom-20 right-10 w-18 h-18 vlcp-circle bg-vlcp-blue/10 animate-float" style={{ animationDelay: "1s" }} />
         </div>
       </section>
 
@@ -171,7 +171,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-islamic-gold mb-2">
+                <div className="text-4xl md:text-5xl font-bold text-vlcp-gold mb-2">
                   {stat.number}
                 </div>
                 <div className="text-muted-foreground">{stat.label}</div>
@@ -277,7 +277,7 @@ export default function Home() {
                 </Button>
               </Link>
               <Link to="/community">
-                <Button variant="islamic" size="xl" className="flex items-center space-x-2">
+                <Button variant="professional" size="xl" className="flex items-center space-x-2">
                   <Users className="w-5 h-5" />
                   <span>Join Community</span>
                 </Button>
