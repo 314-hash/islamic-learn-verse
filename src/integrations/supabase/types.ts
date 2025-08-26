@@ -14,7 +14,254 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      course_enrollments: {
+        Row: {
+          course_id: string | null
+          enrolled_at: string
+          id: string
+          student_id: string | null
+          transaction_hash: string | null
+        }
+        Insert: {
+          course_id?: string | null
+          enrolled_at?: string
+          id?: string
+          student_id?: string | null
+          transaction_hash?: string | null
+        }
+        Update: {
+          course_id?: string | null
+          enrolled_at?: string
+          id?: string
+          student_id?: string | null
+          transaction_hash?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "course_enrollments_course_id_fkey"
+            columns: ["course_id"]
+            isOneToOne: false
+            referencedRelation: "courses"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "course_enrollments_student_id_fkey"
+            columns: ["student_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      courses: {
+        Row: {
+          blockchain_created: boolean | null
+          contract_course_id: number | null
+          created_at: string
+          description: string | null
+          id: string
+          instructor_id: string | null
+          ipfs_hash: string | null
+          is_active: boolean | null
+          price_display: number | null
+          price_wei: string | null
+          title: string
+          updated_at: string
+        }
+        Insert: {
+          blockchain_created?: boolean | null
+          contract_course_id?: number | null
+          created_at?: string
+          description?: string | null
+          id?: string
+          instructor_id?: string | null
+          ipfs_hash?: string | null
+          is_active?: boolean | null
+          price_display?: number | null
+          price_wei?: string | null
+          title: string
+          updated_at?: string
+        }
+        Update: {
+          blockchain_created?: boolean | null
+          contract_course_id?: number | null
+          created_at?: string
+          description?: string | null
+          id?: string
+          instructor_id?: string | null
+          ipfs_hash?: string | null
+          is_active?: boolean | null
+          price_display?: number | null
+          price_wei?: string | null
+          title?: string
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "courses_instructor_id_fkey"
+            columns: ["instructor_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      profiles: {
+        Row: {
+          avatar_url: string | null
+          bio: string | null
+          created_at: string
+          display_name: string | null
+          id: string
+          is_verified_scholar: boolean | null
+          reputation_points: number | null
+          updated_at: string
+          user_id: string
+          wallet_address: string | null
+        }
+        Insert: {
+          avatar_url?: string | null
+          bio?: string | null
+          created_at?: string
+          display_name?: string | null
+          id?: string
+          is_verified_scholar?: boolean | null
+          reputation_points?: number | null
+          updated_at?: string
+          user_id: string
+          wallet_address?: string | null
+        }
+        Update: {
+          avatar_url?: string | null
+          bio?: string | null
+          created_at?: string
+          display_name?: string | null
+          id?: string
+          is_verified_scholar?: boolean | null
+          reputation_points?: number | null
+          updated_at?: string
+          user_id?: string
+          wallet_address?: string | null
+        }
+        Relationships: []
+      }
+      scholar_verifications: {
+        Row: {
+          created_at: string
+          id: string
+          metadata: string | null
+          scholar_id: string | null
+          transaction_hash: string | null
+          verification_status: string | null
+          verified_at: string | null
+          verifier_address: string | null
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          metadata?: string | null
+          scholar_id?: string | null
+          transaction_hash?: string | null
+          verification_status?: string | null
+          verified_at?: string | null
+          verifier_address?: string | null
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          metadata?: string | null
+          scholar_id?: string | null
+          transaction_hash?: string | null
+          verification_status?: string | null
+          verified_at?: string | null
+          verifier_address?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "scholar_verifications_scholar_id_fkey"
+            columns: ["scholar_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      webinar_nfts: {
+        Row: {
+          id: string
+          metadata_uri: string | null
+          minted_at: string
+          owner_id: string | null
+          token_id: number | null
+          transaction_hash: string | null
+          webinar_date: string | null
+          webinar_title: string
+        }
+        Insert: {
+          id?: string
+          metadata_uri?: string | null
+          minted_at?: string
+          owner_id?: string | null
+          token_id?: number | null
+          transaction_hash?: string | null
+          webinar_date?: string | null
+          webinar_title: string
+        }
+        Update: {
+          id?: string
+          metadata_uri?: string | null
+          minted_at?: string
+          owner_id?: string | null
+          token_id?: number | null
+          transaction_hash?: string | null
+          webinar_date?: string | null
+          webinar_title?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "webinar_nfts_owner_id_fkey"
+            columns: ["owner_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      zakat_donations: {
+        Row: {
+          amount_display: number | null
+          amount_wei: string
+          donated_at: string
+          donor_id: string | null
+          id: string
+          transaction_hash: string | null
+        }
+        Insert: {
+          amount_display?: number | null
+          amount_wei: string
+          donated_at?: string
+          donor_id?: string | null
+          id?: string
+          transaction_hash?: string | null
+        }
+        Update: {
+          amount_display?: number | null
+          amount_wei?: string
+          donated_at?: string
+          donor_id?: string | null
+          id?: string
+          transaction_hash?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "zakat_donations_donor_id_fkey"
+            columns: ["donor_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
     }
     Views: {
       [_ in never]: never
