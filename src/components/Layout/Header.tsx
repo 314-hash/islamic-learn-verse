@@ -11,6 +11,7 @@ const navigation = [
   { name: "Webinars", href: "/webinars" },
   { name: "Community", href: "/community" },
   { name: "About", href: "/about" },
+  { name: "Web3", href: "/web3" },
 ];
 
 interface HeaderProps {

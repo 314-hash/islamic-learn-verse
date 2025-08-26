@@ -13,6 +13,7 @@ import Webinars from "./pages/Webinars";
 import Community from "./pages/Community";
 import Profile from "./pages/Profile";
 import About from "./pages/About";
+import Web3 from "./pages/Web3";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -50,6 +51,7 @@ const App = () => {
               <Route path="/webinars" element={<Webinars />} />
               <Route path="/community" element={<Community />} />
               <Route path="/about" element={<About />} />
+              <Route path="/web3" element={<Web3 />} />
               <Route 
                 path="/profile" 
                 element={
