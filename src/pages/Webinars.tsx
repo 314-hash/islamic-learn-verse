@@ -177,7 +177,7 @@ export default function Webinars() {
     }
     if (webinar.isUpcoming) {
       return (
-        <Badge className="bg-islamic-teal/20 text-islamic-teal border-islamic-teal/30">
+        <Badge className="bg-vlcp-blue/20 text-vlcp-blue border-vlcp-blue/30">
           📅 Upcoming
         </Badge>
       );
@@ -243,7 +243,7 @@ export default function Webinars() {
                       {getStatusBadge(webinar)}
                     </div>
                     <CardTitle className="text-xl font-semibold">{webinar.title}</CardTitle>
-                    <div className="text-sm text-islamic-teal font-medium">{webinar.speaker}</div>
+                    <div className="text-sm text-vlcp-blue font-medium">{webinar.speaker}</div>
                     <CardDescription className="line-clamp-2">{webinar.description}</CardDescription>
                   </CardHeader>
                   <CardContent>
@@ -279,7 +279,7 @@ export default function Webinars() {
               {filteredWebinars.filter(w => !w.isLive).map((webinar) => (
                 <Card
                   key={webinar.id}
-                  className="card-gradient border-islamic-gold/20 hover:shadow-gold transition-all duration-300 hover:scale-105 overflow-hidden"
+                  className="card-gradient border-vlcp-gold/20 hover:shadow-gold transition-all duration-300 hover:scale-105 overflow-hidden"
                 >
                   <CardHeader>
                     <div className="flex items-start justify-between mb-4">
@@ -287,7 +287,7 @@ export default function Webinars() {
                       <div className="flex flex-col gap-2">
                         {getStatusBadge(webinar)}
                         {webinar.isPremium && (
-                          <Badge className="bg-islamic-gold/20 text-islamic-gold border-islamic-gold/30">
+                          <Badge className="bg-vlcp-gold/20 text-vlcp-gold border-vlcp-gold/30">
                             Premium
                           </Badge>
                         )}
@@ -299,7 +299,7 @@ export default function Webinars() {
                     </CardTitle>
                     
                     <div className="space-y-1">
-                      <div className="text-sm text-islamic-teal font-medium">{webinar.speaker}</div>
+                      <div className="text-sm text-vlcp-blue font-medium">{webinar.speaker}</div>
                       <div className="text-xs text-muted-foreground">{webinar.speakerTitle}</div>
                     </div>
                     
@@ -327,9 +327,9 @@ export default function Webinars() {
 
                     {/* Countdown for upcoming webinars */}
                     {webinar.isUpcoming && countdown[webinar.id] && (
-                      <div className="bg-islamic-teal/10 border border-islamic-teal/20 rounded-lg p-3">
+                      <div className="bg-vlcp-blue/10 border border-vlcp-blue/20 rounded-lg p-3">
                         <div className="text-xs text-muted-foreground mb-1">Starts in:</div>
-                        <div className="text-lg font-mono font-semibold text-islamic-teal">
+                        <div className="text-lg font-mono font-semibold text-vlcp-blue">
                           {countdown[webinar.id]}
                         </div>
                       </div>
@@ -353,7 +353,7 @@ export default function Webinars() {
                         </div>
                         {webinar.rating > 0 && (
                           <div className="flex items-center space-x-2">
-                            <Star className="w-4 h-4 text-islamic-gold fill-current" />
+                            <Star className="w-4 h-4 text-vlcp-gold fill-current" />
                             <span>{webinar.rating}</span>
                           </div>
                         )}

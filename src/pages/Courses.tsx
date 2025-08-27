@@ -124,8 +124,8 @@ export default function Courses() {
 
   const getLevelColor = (level: string) => {
     switch (level) {
-      case "Beginner": return "bg-islamic-teal/20 text-islamic-teal";
-      case "Intermediate": return "bg-islamic-gold/20 text-islamic-gold";
+    case "Beginner": return "bg-vlcp-blue/20 text-vlcp-blue";
+      case "Intermediate": return "bg-vlcp-gold/20 text-vlcp-gold";
       case "Advanced": return "bg-destructive/20 text-destructive";
       default: return "bg-muted text-muted-foreground";
     }
@@ -202,14 +202,14 @@ export default function Courses() {
               {filteredCourses.map((course) => (
                 <Card
                   key={course.id}
-                  className="card-gradient border-islamic-gold/20 hover:shadow-gold transition-all duration-300 hover:scale-105 overflow-hidden"
+                  className="card-gradient border-vlcp-gold/20 hover:shadow-gold transition-all duration-300 hover:scale-105 overflow-hidden"
                 >
                   <CardHeader className="pb-4">
                     <div className="flex items-start justify-between mb-4">
                       <div className="text-4xl">{course.image}</div>
                       <div className="flex items-center space-x-2">
                         {course.isPremium && (
-                          <Badge className="bg-islamic-gold/20 text-islamic-gold border-islamic-gold/30">
+                          <Badge className="bg-vlcp-gold/20 text-vlcp-gold border-vlcp-gold/30">
                             <Lock className="w-3 h-3 mr-1" />
                             Premium
                           </Badge>
@@ -224,7 +224,7 @@ export default function Courses() {
                       {course.title}
                     </CardTitle>
                     
-                    <div className="text-sm text-islamic-teal font-medium">
+                    <div className="text-sm text-vlcp-blue font-medium">
                       {course.instructor}
                     </div>
                     
@@ -249,14 +249,14 @@ export default function Courses() {
                         <span>{course.students.toLocaleString()}</span>
                       </div>
                       <div className="flex items-center space-x-2">
-                        <Star className="w-4 h-4 text-islamic-gold fill-current" />
+                        <Star className="w-4 h-4 text-vlcp-gold fill-current" />
                         <span>{course.rating}</span>
                       </div>
                     </div>
 
                     {/* Price and Action */}
                     <div className="flex items-center justify-between pt-4 border-t border-border/50">
-                      <div className="text-lg font-semibold text-islamic-gold">
+                      <div className="text-lg font-semibold text-vlcp-gold">
                         {course.price}
                       </div>
                       <Button

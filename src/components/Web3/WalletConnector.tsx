@@ -158,10 +158,10 @@ export default function WalletConnector({
 
   if (!isConnected || !walletInfo) {
     return (
-      <Card className="w-full max-w-md mx-auto card-gradient border-islamic-gold/20">
+      <Card className="w-full max-w-md mx-auto card-gradient border-vlcp-gold/20">
         <CardHeader className="text-center">
           <CardTitle className="flex items-center justify-center space-x-2">
-            <Wallet className="w-6 h-6 text-islamic-gold" />
+            <Wallet className="w-6 h-6 text-vlcp-gold" />
             <span>Connect Wallet</span>
           </CardTitle>
           <CardDescription>
@@ -184,7 +184,7 @@ export default function WalletConnector({
               href="https://metamask.io/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-islamic-gold hover:underline"
+              className="text-vlcp-gold hover:underline"
             >
               Install here
             </a>
@@ -195,11 +195,11 @@ export default function WalletConnector({
   }
 
   return (
-    <Card className="w-full max-w-md mx-auto card-gradient border-islamic-gold/20">
+    <Card className="w-full max-w-md mx-auto card-gradient border-vlcp-gold/20">
       <CardHeader>
         <CardTitle className="flex items-center justify-between">
           <span className="flex items-center space-x-2">
-            <CheckCircle className="w-5 h-5 text-islamic-teal" />
+            <CheckCircle className="w-5 h-5 text-vlcp-blue" />
             <span>Wallet Connected</span>
           </span>
           <Button
@@ -226,7 +226,7 @@ export default function WalletConnector({
               className="h-8 w-8"
             >
               {copied ? (
-                <CheckCircle className="w-4 h-4 text-islamic-teal" />
+                <CheckCircle className="w-4 h-4 text-vlcp-blue" />
               ) : (
                 <Copy className="w-4 h-4" />
               )}
@@ -244,7 +244,7 @@ export default function WalletConnector({
 
         <div>
           <label className="text-sm font-medium text-muted-foreground">Balance</label>
-          <p className="text-lg font-semibold text-islamic-gold mt-1">
+          <p className="text-lg font-semibold text-vlcp-gold mt-1">
             {parseFloat(walletInfo.balance).toFixed(4)} ETH
           </p>
         </div>

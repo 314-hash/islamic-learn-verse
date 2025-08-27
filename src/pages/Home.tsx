@@ -199,10 +199,10 @@ export default function Home() {
               {features.map((feature, index) => {
                 const Icon = feature.icon;
                 return (
-                  <Card key={index} className="card-gradient border-islamic-gold/20 hover:shadow-gold transition-all duration-300 hover:scale-105">
+                <Card key={index} className="card-gradient border-vlcp-gold/20 hover:shadow-gold transition-all duration-300 hover:scale-105">
                     <CardHeader className="text-center">
-                      <div className="w-16 h-16 mx-auto bg-gold-gradient rounded-full flex items-center justify-center mb-4">
-                        <Icon className="w-8 h-8 text-islamic-navy" />
+                      <div className="w-16 h-16 mx-auto gold-gradient rounded-full flex items-center justify-center mb-4">
+                        <Icon className="w-8 h-8 text-vlcp-navy" />
                       </div>
                       <CardTitle className="text-xl font-semibold">{feature.title}</CardTitle>
                     </CardHeader>
@@ -234,11 +234,11 @@ export default function Home() {
           <GSAPWrapper animation="stagger" staggerDelay={0.3}>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {testimonials.map((testimonial, index) => (
-                <Card key={index} className="card-gradient border-islamic-teal/20 hover:shadow-teal transition-all duration-300">
+                <Card key={index} className="card-gradient border-vlcp-blue/20 hover:shadow-blue transition-all duration-300">
                   <CardHeader>
                     <div className="flex items-center space-x-1 mb-4">
                       {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} className="w-5 h-5 fill-islamic-gold text-islamic-gold" />
+                        <Star key={i} className="w-5 h-5 fill-vlcp-gold text-vlcp-gold" />
                       ))}
                     </div>
                     <CardDescription className="text-base leading-relaxed">
@@ -261,7 +261,7 @@ export default function Home() {
       {/* CTA Section */}
       <GSAPWrapper animation="fadeInUp" className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="card-gradient border border-islamic-gold/30 rounded-2xl p-12 shadow-elegant">
+          <div className="card-gradient border border-vlcp-gold/30 rounded-2xl p-8 md:p-12 shadow-elegant">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               Ready to Start Learning?
             </h2>
@@ -283,14 +283,14 @@ export default function Home() {
                 </Button>
               </Link>
             </div>
-            <div className="flex items-center justify-center space-x-4 mt-8 text-sm text-muted-foreground">
+            <div className="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-4 mt-8 text-sm text-muted-foreground">
               <div className="flex items-center space-x-2">
-                <Shield className="w-4 h-4 text-islamic-teal" />
+                <Shield className="w-4 h-4 text-vlcp-blue" />
                 <span>Secure & Verified</span>
               </div>
-              <span>•</span>
+              <span className="hidden sm:block">•</span>
               <div className="flex items-center space-x-2">
-                <Award className="w-4 h-4 text-islamic-gold" />
+                <Award className="w-4 h-4 text-vlcp-gold" />
                 <span>NFT Certificates</span>
               </div>
             </div>
