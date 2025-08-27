@@ -1,0 +1,18 @@
+const { ethers } = require("hardhat");
+
+async function main() {
+  const EduCertificate = await ethers.getContractFactory("EduCertificate");
+
+  // ✅ safer: convert to 18 decimals instead of hardcoding
+  const initialSupply = ethers.parseUnits("100000000", 18); 
+
+  const eduCert = await EduCertificate.deploy(initialSupply);
+  await eduCert.waitForDeployment();
+
+  console.log("EduCertificate deployed to:", await eduCert.getAddress());
+}
+
+main().catch((error) => {
+  console.error(error);
+  process.exitCode = 1;
+});
