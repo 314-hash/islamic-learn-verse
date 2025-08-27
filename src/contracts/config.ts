@@ -6,7 +6,7 @@ export const CONTRACTS = {
   SCHOLAR_DAO: "0xefb059481b92be5a8b6b118355d9676633a5dfc5",
   ZAKAT_POOL: "0x0000000000000000000000000000000000000000",
   COURSE_MANAGER: "0x5330b26039bfbaf199ac60da500561b3169c667c",
-  EDU_TOKEN: "0xE7C1F17Cc6aC5CEB7f763DcE84310D2c26bDF927", // ERC20 token for payments
+  EDU_TOKEN: "0x0477d3703722347febecc9cb93a072a46d289e81", // ERC20 token for payments
 } as const;
 
 // Contract ABIs (simplified for key functions)
