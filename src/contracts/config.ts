@@ -1,12 +1,11 @@
 // Smart Contract Configuration
 export const CONTRACTS = {
   // Replace with actual deployed contract addresses
-  REPUTATION: "0x9bbfd3769759da15fe55fedca4af322fe1aaf80c",
-  WEBINAR_NFT: "0x0000000000000000000000000000000000000000", 
-  SCHOLAR_DAO: "0xefb059481b92be5a8b6b118355d9676633a5dfc5",
-  ZAKAT_POOL: "0x0000000000000000000000000000000000000000",
-  COURSE_MANAGER: "0x5330b26039bfbaf199ac60da500561b3169c667c",
-  EDU_TOKEN: "0x0477d3703722347febecc9cb93a072a46d289e81", // ERC20 token for payments
+  COURSE_MANAGER: "0x186509B8C84e4012E69837BBB85F3d9952E53E93", // Updated from your output
+  EDU_TOKEN: "0xF30D071bADA273BBC6F28c933E5Ac4BFFF31f684",     // Updated from your output
+  EDU_CERTIFICATE: "0xFe5826BD7bac88d4446f8346032f36Dfbc89de84", // Added EduCertificate from your output
+  REWARD_DISTRIBUTOR: "0x7b6c9083a0b06E31789c2E375dE55dD900FDe1B6", // Added RewardDistributor
+  EDU_DAO: "0xf3e077bEfd670A07B2d9ffe23DFAf217d293a4B7",         // Added EduDAO
 } as const;
 
 // Contract ABIs (simplified for key functions)
